@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    TESTING
+{% endblock %}
+
+{% block content %}
+    <form method="POST" action="/">
+        <div class="form-group pt-3">
+            {{ form.street1.label}}: {{ form.street1}}
+            {{ form.street2.label}}: {{ form.street2}}
+        </div>
+        <div class="form-group pt-3">
+            {{ form.month.label}}: {{ form.month }}
+            {{ form.day.label}}: {{ form.day }}
+            {{ form.hour.label}}: {{ form.hour }}
+        </div>
+        <div class="form-group pt-3">
+            {{ form.district.label }}: {{ form.district }}
+        </div>
+        <div class="form-group pt-3">
+            {{ form.latitude.label }}: {{ form.latitude }}
+            {{ form.longitude.label }}: {{ form.longitude }}
+        </div>
+        <div class="form-group pt-3">
+            {{ form.visibility.label }}: {{ form.visibility }}
+            {{ form.light.label }}: {{ form.light }}
+            {{ form.injury.label }}: {{ form.injury }}
+        </div>
+        <div class="form-group pt-3">
+            <div>
+                {{ form.pedestrian.label }}: {{ form.pedestrian }}
+            </div>
+            <div>
+                {{ form.cyclist.label }}: {{ form.cyclist }}
+            </div>
+            <div>
+                {{ form.automobile.label }}: {{ form.automobile }}
+            </div>
+            <div>
+                {{ form.motorcycle.label }}: {{ form.motorcycle }}
+            </div>
+            <div>
+                {{ form.truck.label }}: {{ form.truck }}
+            </div>
+            <div>
+                {{ form.transit_vehicle.label }}: {{ form.transit_vehicle }}
+            </div>
+            <div>
+                {{ form.emergency_vehicle.label }}: {{ form.emergency_vehicle }}
+            </div>
+            <div>
+                {{ form.passenger.label }}: {{ form.passenger }}
+            </div>
+            <div>
+                {{ form.speeding.label }}: {{ form.speeding }}
+            </div>
+            <div>
+                {{ form.aggressive_driver.label }}: {{ form.aggressive_driver }}
+            </div>
+            <div>
+                {{ form.redlight.label }}: {{ form.redlight }}
+            </div>
+            <div>
+                {{ form.alcohol.label }}: {{ form.alcohol }}
+            </div>
+            <div>
+                {{ form.disability.label }}: {{ form.disability }}
+            </div> 
+        </div>
+        
+        <div class="pt-4">
+            <input type="submit" value="Predict">
+        </div>
+        
+    </form>
+    
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
